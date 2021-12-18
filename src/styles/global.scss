@@ -13,7 +13,6 @@
   --blue-400:#1d4ed8;
   --blue-500:#1e40af;
   --blue-700:#1e3a8a;
-
   --green: #22C55E;
 }
 
@@ -26,6 +25,9 @@
 @media (max-width: 720px){
   html{
     font-size: 87.5%;
+  }
+  body {
+    overflow-x: hidden;
   }
 }
 
