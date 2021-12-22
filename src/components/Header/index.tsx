@@ -21,8 +21,15 @@ export function Header() {
           <li><a href="#">Demonstração</a></li>
         </ul>
       </nav>
-      <main></main>
+      <main className={styles.heroImage}>
+        <div className={styles.container}>
+          <div className={styles.content}>
+            <h1>Monitoramento online e Gestão de Ativos</h1>
+            <p>Preveja possíveis problemas e acabe com períodos de inatividade</p>
+            <a href="#">Receba uma Demonstração</a>
+          </div>
+        </div>
+      </main>
     </header>
   )
-  //tag main é onde será inserido o background
 }
