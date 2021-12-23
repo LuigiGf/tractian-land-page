@@ -6,7 +6,8 @@
   align-items: center;
   background-color: var(--blue-700);
   height: 8vh;
-
+  position: fixed;
+  width: 100%;
   img {
     width: 10rem;
   }
