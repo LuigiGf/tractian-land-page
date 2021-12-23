@@ -1,4 +1,5 @@
 import { NavBar } from '../NavBar'
+import { StyledButton } from '../StyledButton'
 
 import styles from './styles.module.scss'
 
@@ -11,7 +12,7 @@ export function Header() {
           <div className={styles.content}>
             <h1>Monitoramento online e Gestão de Ativos</h1>
             <p>Preveja possíveis problemas e acabe com períodos de inatividade</p>
-            <a href="#">Receba uma Demonstração</a>
+            <StyledButton content="Receba uma demonstração" />
           </div>
         </div>
       </main>

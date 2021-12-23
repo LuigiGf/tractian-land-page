@@ -4,6 +4,13 @@
   width: 90%;
 }
 
+.btn {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
 .cardList {
   display: flex;
   justify-content: space-between;
