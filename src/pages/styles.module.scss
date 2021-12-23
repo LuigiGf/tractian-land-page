@@ -11,6 +11,14 @@
   flex-wrap: wrap;
 }
 
+.carousel {
+  h1{
+    width: fit-content;
+    margin: auto;
+    font-size: 2rem;
+  }
+}
+
 @media (max-width: 720px) {
   .cardList{
     flex-direction: column;

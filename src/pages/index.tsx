@@ -1,5 +1,6 @@
 import Head from "next/head";
 import { Card } from "../components/Card";
+import { Carousel } from "../components/Carousel";
 import { Header } from "../components/Header";
 
 import styles from './styles.module.scss'
@@ -11,6 +12,11 @@ export default function Home() {
         <title>TRACTIAN | Landpage</title>
       </Head>
       <Header />
+
+      <section className={styles.carousel}>
+        <h1>Algumas empresas que são nossos clientes</h1>
+        <Carousel />
+      </section>
       <div className={styles.container}>
         <section className={styles.cardList}>
           <Card title='Software de Manutenção TracOS' imageURL='./images/manutencao.png' bodyContent='O CMMS revolucionário para planejar, acompanhar métricas e conectar-se com sua equipe.'></Card>
