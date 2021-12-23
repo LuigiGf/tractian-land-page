@@ -1,93 +1,3 @@
-.navMain {
-  color: var(--white);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  background-color: var(--blue-700);
-  height: 8vh;
-
-  img {
-    width: 50%;
-  }
-  a {
-    transition: 0.3s;
-  }
-  a:hover {
-    opacity: 0.7;
-  }
-  box-shadow: 0 2px 4px 0 rgba(7, 5, 5, 0.2);
-}
-.logo {
-  font-size: 1.5rem; //24px (desktop)
-  text-transform: uppercase;
-  letter-spacing: 0.25rem; //4px (desktop)
-}
-.navList {
-  list-style: none;
-  display: flex;
-  li {
-    letter-spacing: 0.188rem; //3px (desktop)
-    margin-left: 2rem; //32 px(desktop)
-  }
-}
-.mobileMenu {
-  cursor: pointer;
-  display: none;
-  div {
-    width: 2rem;
-    height: 0.125rem;
-    background-color: var(--white);
-    margin: 0.5rem;
-  } 
-}
-@media (max-width: 720px) {
-  .logo {
-    margin-left: 3rem;
-  }
-  .navMain {
-    justify-content: space-between;
-  }
-  .navList {
-    display: none;
-  }
-  .navListActive {
-    position: absolute;
-    top: 8vh;
-    right: 0;
-    width: 50vw;
-    height: 92vh;
-    background-color: var(--blue-700);
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
-    li {
-      margin-top: 5%;
-      list-style: none;
-      letter-spacing: 0.188rem;
-      font-size: 2rem;
-      margin-left: 15%;
-      opacity: 100; 
-    }
-  }
-  .mobileMenu {
-    display: block;
-  }
-  
-  .mobileMenuActive {
-    position: absolute;
-    right: 0;
-    cursor: pointer;
-    display: block;
-    div {
-      width: 2rem;
-      height: 0.125rem;
-      background-color: var(--white);
-      margin: 0.5rem;
-    } 
-  }
-}
-
 .heroImage {
   background-image: url("../../../public/images/teste.png");
   background-size: cover;
@@ -117,6 +27,7 @@
     padding-bottom: 1rem;
   }
   a {
+    margin-top: 2rem;
     display: inline-block;
     padding: 0.75rem 1.25rem;
     border-radius: 10rem;
@@ -158,6 +69,20 @@
       &:before{
         width: 100%;
       }
+    }
+  }
+}
+
+@media (max-width: 720px) {
+  .container{
+    width: 100%;
+  }
+}
+
+@media (max-width: 312px){
+  .content{
+    a{
+      width: 15rem;
     }
   }
 }
